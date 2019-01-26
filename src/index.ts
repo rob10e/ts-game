@@ -1,7 +1,6 @@
-import './styles/style.sass';
+import MainGame from "./MainGame";
 
-console.log('hello, world');
+const canvas = document.getElementById("canvas") as HTMLCanvasElement;
+const game = new MainGame({ canvas, fullscreen: true });
 
-const testMessage: string = 'TypeScript works';
-
-console.log(testMessage);
+game.start();
